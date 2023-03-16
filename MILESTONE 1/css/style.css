@@ -109,6 +109,22 @@ sezione chat
 #search-bar {
     height: 1.875rem;
     background-color: gold;
+    padding-top: 15px;
+    padding: 15px;
+}
+#search-bar input{
+    border: none;
+    flex-grow: 1;
+    padding: .3125rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#search-bar i{
+    font-size: 15px;
+    background-color: white;
+    padding: .3125rem 1.25rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 #all-chats{
