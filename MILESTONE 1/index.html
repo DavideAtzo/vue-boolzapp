@@ -55,13 +55,13 @@
                     </div>
                     <!-- lista chat  -->
                     <div id="all-chats" class="">
-                        <div id="singol-chat"  class="d-flex just-content-between">
+                        <div v-for="contact in contacts" id="singol-chat"  class="d-flex just-content-between">
                             <div class="d-flex">
                                 <div id="img-chat">
                                     <img src="img/avatar_1.jpg" alt="avatar">
                                 </div>
                                 <div id="dati-chat" class="">
-                                    <h5>Michele</h5>
+                                    <h5>{{ contact.name }}</h5>
                                     <h6>attiva notifiche dekstop</h6>
                                 </div>
                             </div>
