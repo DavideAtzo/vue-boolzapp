@@ -1,5 +1,4 @@
 'use strict';
-alert('ciaoo')
 
 const { createApp } = Vue
 //option api

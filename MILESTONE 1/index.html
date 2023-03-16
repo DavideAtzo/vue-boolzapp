@@ -11,8 +11,33 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="app">
-        
+    <!-- big container contente l'app e che verrà collegato a vuejs  -->
+    <div id="app" class="big-container d-flex align-items-center just-content-center">
+        <div class="row just-content-between">
+            <!-- lato sinistro contenente la sezione personale  -->
+            <div id="section-user">
+                <!-- area personale  -->
+              <div id="personal-user">
+                utente
+              </div>
+              <!-- centro notifiche  -->
+              <div id="notifiche">
+                qui vanno le notifiche
+              </div>
+              <!-- search bar + chat aperte  -->
+              <div id="library-chats">
+                <!-- search bar  -->
+                <div id="search-bar">search bar</div>
+                <!-- lista chat  -->
+                <div id="all-chats" >
+                    tante chat
+                </div>
+              </div>
+            </div>
+            <div id="open-chat">
+              singol-chat
+            </div>
+          </div>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/script.js"></script>
