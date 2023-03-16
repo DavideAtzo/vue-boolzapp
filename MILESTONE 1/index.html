@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boolzapp</title>
     <!-- link font awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link ms css  -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- big container contente l'app e che verrà collegato a vuejs  -->
     <div id="app" class="big-container d-flex align-items-center just-content-center">
@@ -17,39 +21,63 @@
             <!-- lato sinistro contenente la sezione personale  -->
             <div id="section-user">
                 <!-- area personale  -->
-              <div id="personal-user" class="px-10">
-                utente
-              </div>
-              <!-- centro notifiche  -->
-              <div id="notifiche" class="px-10">
-                qui vanno le notifiche
-              </div>
-              <!-- search bar + chat aperte  -->
-              <div id="library-chats">
-                <!-- search bar  -->
-                <div id="search-bar" class="px-10">search bar</div>
-                <!-- lista chat  -->
-                <div id="all-chats" class="px-10">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus minima accusamus blanditiis necessitatibus similique quidem impedit qui voluptas, nobis cumque laboriosam accusantium illo vitae aliquam nisi amet eligendi voluptate vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi eos provident porro, laudantium asperiores amet vitae similique ullam nostrum officiis, aliquid mollitia rerum blanditiis voluptatem ratione corrupti et aliquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ea dolor facilis. Distinctio quod doloribus esse, vel similique eius delectus quis? Nam cupiditate ducimus illo ad repellendus ut, officia quia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis minus laboriosam dignissimos tenetur maxime consectetur provident aperiam neque ducimus corrupti? Illo placeat consequatur ea sed vitae odio consectetur adipisci quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, doloribus modi voluptas, dicta aliquam ducimus esse maxime quibusdam doloremque nostrum obcaecati dolorem perspiciatis eos dignissimos recusandae soluta! Magni, impedit alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odit? Vel soluta fuga suscipit et architecto dicta nam, harum commodi minima sunt hic culpa! Qui iste nihil cumque repudiandae nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed provident delectus perspiciatis? Voluptate at ut magnam asperiores, harum reprehenderit voluptates a animi, nemo debitis est, ipsum numquam deleniti nesciunt?</p>
+                <div id="personal-user" class="px-10">
+                    utente
                 </div>
-              </div>
+                <!-- centro notifiche  -->
+                <div id="notifiche" class="d-flex align-items-center px-10">
+                    <div><i class="fa-solid fa-bell-slash"></i></div>
+                    <div>
+                        <h5>Ricevi notifiche di nuovi messaggi</h5>
+                        <h6>attiva notifiche dekstop</h6>
+                    </div>
+                </div>
+                <!-- search bar + chat aperte  -->
+                <div id="library-chats">
+                    <!-- search bar  -->
+                    <div id="search-bar" class="px-10">
+                        <input type="text">
+                    </div>
+                    <!-- lista chat  -->
+                    <div id="all-chats" class="px-10">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus minima accusamus blanditiis
+                            necessitatibus similique quidem impedit qui voluptas, nobis cumque laboriosam accusantium
+                            illo vitae aliquam nisi amet eligendi voluptate vero. Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Voluptate animi eos provident porro, laudantium asperiores amet vitae
+                            similique ullam nostrum officiis, aliquid mollitia rerum blanditiis voluptatem ratione
+                            corrupti et aliquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+                            ea dolor facilis. Distinctio quod doloribus esse, vel similique eius delectus quis? Nam
+                            cupiditate ducimus illo ad repellendus ut, officia quia? Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Debitis minus laboriosam dignissimos tenetur maxime
+                            consectetur provident aperiam neque ducimus corrupti? Illo placeat consequatur ea sed vitae
+                            odio consectetur adipisci quos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+                            doloribus modi voluptas, dicta aliquam ducimus esse maxime quibusdam doloremque nostrum
+                            obcaecati dolorem perspiciatis eos dignissimos recusandae soluta! Magni, impedit alias?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, odit? Vel soluta fuga suscipit
+                            et architecto dicta nam, harum commodi minima sunt hic culpa! Qui iste nihil cumque
+                            repudiandae nulla! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sed
+                            provident delectus perspiciatis? Voluptate at ut magnam asperiores, harum reprehenderit
+                            voluptates a animi, nemo debitis est, ipsum numquam deleniti nesciunt?</p>
+                    </div>
+                </div>
             </div>
             <div id="open-chat">
-              <div id="friend-chat" class="px-10">
-                <div>profilo amico</div>
-              </div>
-              <div id="sez-message">
-                qui comparirà la chat
-              </div>
-              <div id="wrt-message" class="d-flex align-items-center just-content-between px-10">
-                <div>icona</div>
-                <div>search bar</div>
-                <div>icona</div>
-              </div>
+                <div id="friend-chat" class="px-10">
+                    <div>profilo amico</div>
+                </div>
+                <div id="sez-message">
+                    qui comparirà la chat
+                </div>
+                <div id="wrt-message" class="d-flex align-items-center just-content-between px-10">
+                    <div>icona</div>
+                    <div>search bar</div>
+                    <div>icona</div>
+                </div>
             </div>
-          </div>
+        </div>
     </div>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
