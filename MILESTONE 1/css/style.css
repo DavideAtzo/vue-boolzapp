@@ -51,7 +51,6 @@ struttura globale
     margin: 0 auto;
     flex-direction: column;
     height: 100vh;
-
 }
 
 .row {
@@ -70,7 +69,9 @@ main left
 #section-user {
     background-color: greenyellow;
     width: 40%;
+    height: 100%;
     border: 1px solid;
+    overflow: hidden;
 }
 
 #personal-user {
@@ -82,15 +83,23 @@ main left
     height: 50px;
     background-color: pink;
 }
+#library-chats{
+    height: 100%;
+    overflow: hidden;
+}
 
 #search-bar {
     height: 1.875rem;
     background-color: gold;
 }
 
-#all-chats {
+#all-chats{
+    flex-grow: 1;
+    width: 100%;
+    overflow-y: auto;
     height: 100%;
 }
+
 
 
 /*
