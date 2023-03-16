@@ -4,30 +4,42 @@ reset
 +++++++++++
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background: rgb(40, 157, 152);
+    background: linear-gradient(180deg, rgba(40, 157, 152, 1) 20%, rgba(217, 219, 212, 1) 20%);
+}
+
 /*
 +++++++++++
 utility
 +++++++++++
 */
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.align-items-center{
+.align-items-center {
     align-items: center;
 }
-.just-content-center{
+
+.just-content-center {
     justify-content: center;
 }
 
-.just-content-between{
+.just-content-between {
     justify-content: space-between;
 }
+
+.px-10 {
+    padding: 0 10px;
+}
+
 /*
 +++++++++++
 struttura globale
@@ -39,41 +51,44 @@ struttura globale
     margin: 0 auto;
     flex-direction: column;
     height: 100vh;
-    
+
 }
-.row{
+
+.row {
     width: 90%;
     height: 90%;
     display: flex;
     border: 1px solid black;
 }
+
 /*
 +++++++++++
 main left
 +++++++++++
 */
 
-#section-user{
+#section-user {
     background-color: greenyellow;
     width: 40%;
     border: 1px solid;
 }
-#personal-user{
+
+#personal-user {
     background-color: lightcoral;
     height: 3.125rem;
 }
 
-#notifiche{
+#notifiche {
     height: 50px;
     background-color: pink;
 }
 
-#search-bar{
+#search-bar {
     height: 1.875rem;
     background-color: gold;
 }
 
-#all-chats{
+#all-chats {
     height: 100%;
 }
 
@@ -84,19 +99,19 @@ main right
 +++++++++++
 */
 
-#open-chat{
+#open-chat {
     background-color: yellow;
     width: 60%;
     border: 1px solid;
     position: relative;
 }
 
-#friend-chat{
+#friend-chat {
     height: 3.125rem;
     background-color: lightcoral;
 }
 
-#wrt-message{
+#wrt-message {
     height: 3.125rem;
     background-color: aqua;
     position: absolute;
