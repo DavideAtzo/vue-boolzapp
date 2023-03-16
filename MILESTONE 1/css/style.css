@@ -59,7 +59,10 @@ struttura globale
     display: flex;
     border: 1px solid black;
 }
-
+#personal-user i,
+#friend-chat i{
+    padding: 0 .3125rem;
+}
 /*
 +++++++++++
 main left
@@ -73,6 +76,7 @@ main left
     border: 1px solid;
     overflow: hidden;
 }
+
 
 #personal-user {
     background-color: lightcoral;
@@ -158,4 +162,9 @@ main right
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+#wrt-message input{
+    border: none;
+    padding: .3125rem;
 }
