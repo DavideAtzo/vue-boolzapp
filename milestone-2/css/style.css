@@ -188,21 +188,19 @@ main right
     justify-content: start;
     width: 100%;
 }
-
+#sez-message p{
+    padding: .3125rem;
+    padding-right: 3.125rem;
+    padding-left: .625rem;
+    border-radius: .375rem;
+    margin-bottom: .625rem;
+}
 
 .inviato p{
     background-color: #d6f8bced;
-    padding: .3125rem;
-    padding-right: 3.125rem;
-    padding-left: .625rem;
-    border-radius: .375rem;
 }
 .ricevuto p{
     background-color: white;
-    padding: .3125rem;
-    padding-right: 3.125rem;
-    padding-left: .625rem;
-    border-radius: .375rem;
 }
 
 
