@@ -56,7 +56,7 @@
                     <!-- lista chat  -->
                     <div id="all-chats" class="">
                         <div v-for="contact in contacts" id="singol-chat"  class="d-flex just-content-between">
-                            <div class="d-flex">
+                            <div @click="selectChat" class="d-flex">
                                 <div id="img-chat">
                                     <img :src="contact.avatar" alt="avatar">
                                 </div>
