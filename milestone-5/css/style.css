@@ -193,7 +193,7 @@ main right
     padding-left: .625rem;
     border-radius: .375rem;
     margin-bottom: .625rem;
-    max-width: 300px;
+    max-width: 350px;
     position: relative;
 }
 
@@ -203,7 +203,12 @@ main right
 .ricevuto .testo-msg{
     background-color: white;
 }
+#sez-message .testo-msg i{
+    display: flex;
+    justify-content: end;
+    opacity: 0.5;
 
+}
 .orario-msg{
     font-size: 8px;
     padding-left: 40px;
@@ -218,6 +223,7 @@ main right
     top: 20px;
     box-shadow: 0px 0px 5px;
     display: none;
+    z-index: 50;
 }
 .show{
     display: block;

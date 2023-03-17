@@ -5,7 +5,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            selectMessage: false,
+            selectMessage: null,
             newMessage: '',
             searchKey: '',
             active: 0,
