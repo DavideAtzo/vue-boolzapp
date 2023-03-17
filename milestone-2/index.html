@@ -93,9 +93,9 @@
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </div>
-                <div id="sez-message" v-for="message in contacts">
+                <div id="sez-message" v-for="message in contacts[active].messages">
                     <div id="msg-inviato">
-                        <p>{{ message.messages[message] }}</p>
+                        <p>{{ message.message }}</p>
                     </div>
                     <div id="msg-ricevuto">
                         <p>messaggio ricevuto</p>
