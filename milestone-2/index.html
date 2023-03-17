@@ -93,8 +93,8 @@
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </div>
-                <div id="sez-message" v-for="(message, index) in contacts[active].messages">
-                    <div class="msg-inviato">
+                <div id="sez-message" >
+                    <div class="msg-inviato" v-for="(message, index) in contacts[active].messages">
                         <p>{{ message.message }}</p>
                     </div>
                     <div class="msg-ricevuto">
