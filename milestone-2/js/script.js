@@ -174,9 +174,9 @@ createApp({
     },
     methods: {
         selectChat(index){
-            console.log('cliccato')
             this.active = index;
-        }
+        },
+        
     }
 }
 ).mount('#app');
