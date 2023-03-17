@@ -171,5 +171,11 @@ createApp({
             
         }
     },
+    methods: {
+        selectChat(index){
+            console.log('cliccato')
+            this.contacts.visible = index;
+        }
+    }
 }
 ).mount('#app');
