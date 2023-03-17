@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolzapp</title>
+    <!-- link font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link ms css  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- big container contente l'app e che verrà collegato a vuejs  -->
+    <div id="app" class="big-container d-flex align-items-center just-content-center" v-cloak>
+        <div class="row just-content-between">
+            <!-- lato sinistro contenente la sezione personale  -->
+            <div id="section-user">
+                <!-- area personale  -->
+                <div id="personal-user" class="d-flex align-items-center just-content-between px-10">
+                    <div class="d-flex">
+                        <div id="img-chat">
+                            <img src="img/avatar_1.jpg" alt="avatar">
+                           
+                        </div>
+                        <div id="nome-person" class="d-flex align-items-center">
+                            <h5>Sonia</h5>
+                        </div>
+                    </div>
+                    <div class="d-flex align-center">
+                        <i class="fa-solid fa-circle-notch"></i>
+                        <i class="fa-solid fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <!-- centro notifiche  -->
+                <div id="notifiche" class="d-flex align-items-center px-10">
+                    <div><i class="fa-solid fa-bell-slash"></i></div>
+                    <div>
+                        <h5>Ricevi notifiche di nuovi messaggi</h5>
+                        <h6>attiva notifiche dekstop</h6>
+                    </div>
+                </div>
+                <!-- search bar + chat aperte  -->
+                <div id="library-chats">
+                    <!-- search bar  -->
+                    <div id="search-bar" class="d-flex align-items-center px-10">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="" placeholder="Cerca o inizia una nuova chat">
+
+                    </div>
+                    <!-- lista chat  -->
+                    <div id="all-chats" class="">
+                        <div v-for="(contact, index) in contacts" @click="selectChat(index)" :class="{active: index === active}" id="singol-chat"  class="d-flex just-content-between">
+                            <div  class="d-flex">
+                                <div id="img-chat">
+                                    <img :src="contact.avatar" alt="avatar">
+                                </div>
+                                <div id="dati-chat" class="">
+                                    <h5>{{ contact.name }}</h5>
+                                    <h6>attiva notifiche dekstop</h6>
+                                </div>
+                            </div>
+                            <div id="orario-chat">
+                                <h6>12:00</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="open-chat">
+                <div id="friend-chat" class="d-flex align-items-center just-content-between px-10">
+                    <div id="singol-chat"  class="d-flex just-content-between">
+                        <div class="d-flex">
+                            <div id="img-chat">
+                                <img :src="contacts[active].avatar" alt="avatar">
+                            </div>
+                            <div id="dati-chat">
+                                <div id="nome-person" class="d-flex align-items-center">
+                                    <h5>{{ contacts[active].name }}</h5>
+                                </div>
+                                <h6>ultimo accesso alle 12:00</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-sharp fa-solid fa-paperclip"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                </div>
+                <div id="sez-message" >
+                    <div class="inviato" v-for="(message, index) in contacts[active].messages" :class="{inviato: message.status === 'sent', ricevuto: message.status === 'received'}">
+                        <p>{{ message.message }}</p>
+                    </div>
+                </div>
+                <div id="wrt-message" class="d-flex align-items-center just-content-between px-10">
+                    <div id="emoji">
+                        <i class="fa-regular fa-face-smile"></i>
+                    </div>
+                    <div id="invia-msg">
+                        <input type="text" class="" placeholder="Invia un messaggio" @keyup.enter="addMessagge" v-model="newMessage">
+                    </div>
+                    <div id="invia-vocale">
+                        <i class="fa-solid fa-microphone"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
