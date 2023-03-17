@@ -194,6 +194,7 @@ main right
     border-radius: .375rem;
     margin-bottom: .625rem;
     max-width: 300px;
+    position: relative;
 }
 
 .inviato .testo-msg{
@@ -208,6 +209,14 @@ main right
     padding-left: 40px;
     display: flex;
     align-items: end;
+}
+.opz-message{
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    box-shadow: 0px 0px 5px;
 }
 
 #wrt-message {
