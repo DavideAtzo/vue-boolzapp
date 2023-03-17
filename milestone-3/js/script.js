@@ -181,7 +181,7 @@ createApp({
                 this.contacts[this.active].messages.push({ message: this.newMessage, status: 'sent' })
                 this.newMessage = '';
             }
-            // setInterval(this.autoBotMessage, 1000)
+            setTimeout(this.autoBotMessage, 1000)
         },
         autoBotMessage(){
             this.contacts[this.active].messages.push({ message: 'ok', status: 'received' })
