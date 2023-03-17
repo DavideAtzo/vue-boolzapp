@@ -5,6 +5,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            selectMessage: false,
             newMessage: '',
             searchKey: '',
             active: 0,
@@ -195,7 +196,7 @@ createApp({
             }
         },
         optionMessage(){
-            console.log('devi aprirti')
+            this.selectMessage = !this.selectMessage;
         }
     }
 }
