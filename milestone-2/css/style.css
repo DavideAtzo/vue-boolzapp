@@ -178,26 +178,26 @@ main right
     height: 100%;
     padding: .625rem 1.875rem;
 }
-#msg-inviato{
+.msg-inviato{
     display: flex;
     justify-content: end;
     width: 100%;
 }
-#msg-ricevuto{
+.msg-ricevuto{
     display: flex;
     justify-content: start;
     width: 100%;
 }
 
 
-#msg-inviato p{
+.msg-inviato p{
     background-color: #d6f8bced;
     padding: .3125rem;
     padding-right: 3.125rem;
     padding-left: .625rem;
     border-radius: .375rem;
 }
-#msg-ricevuto p{
+.msg-ricevuto p{
     background-color: white;
     padding: .3125rem;
     padding-right: 3.125rem;
