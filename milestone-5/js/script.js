@@ -193,6 +193,9 @@ createApp({
             } else {
                 return this.contacts;
             }
+        },
+        optionMessage(){
+            console.log('devi aprirti')
         }
     }
 }

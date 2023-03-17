@@ -95,7 +95,7 @@
                 </div>
                 <div id="sez-message" >
                     <div v-for="(message, index) in contacts[active].messages" :class="{inviato: message.status === 'sent', ricevuto: message.status === 'received'}">
-                        <div class="testo-msg d-flex just-content-between">
+                        <div class="testo-msg d-flex just-content-between" @click="optionMessage">
                             <p>{{ message.message }}</p>
                             <p class="orario-msg">12:00</p>
                             <div class="opz-message">

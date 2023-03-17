@@ -217,6 +217,10 @@ main right
     right: 10px;
     top: 20px;
     box-shadow: 0px 0px 5px;
+    display: none;
+}
+.show{
+    display: block;
 }
 
 #wrt-message {
