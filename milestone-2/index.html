@@ -94,12 +94,12 @@
                     </div>
                 </div>
                 <div id="sez-message" >
-                    <div class="msg-inviato" v-for="(message, index) in contacts[active].messages">
+                    <div class="inviato" v-for="(message, index) in contacts[active].messages" :class="{inviato: message.status === 'sent', ricevuto: message.status === 'received'}">
                         <p>{{ message.message }}</p>
                     </div>
-                    <div class="msg-ricevuto">
+                    <!-- <div class="ricevuto">
                         <p>messaggio ricevuto</p>
-                    </div>
+                    </div> -->
                 </div>
                 <div id="wrt-message" class="d-flex align-items-center just-content-between px-10">
                     <div id="emoji">
