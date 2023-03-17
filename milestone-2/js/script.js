@@ -5,6 +5,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
+            active: 0,
             contacts: [
                 {
                     name: 'Michele',
@@ -174,7 +175,7 @@ createApp({
     methods: {
         selectChat(index){
             console.log('cliccato')
-            this.contacts.visible = index;
+            this.active = index;
         }
     }
 }

@@ -16,7 +16,7 @@
 
 <body>
     <!-- big container contente l'app e che verrà collegato a vuejs  -->
-    <div id="app" class="big-container d-flex align-items-center just-content-center">
+    <div id="app" class="big-container d-flex align-items-center just-content-center" v-cloak>
         <div class="row just-content-between">
             <!-- lato sinistro contenente la sezione personale  -->
             <div id="section-user">
@@ -55,8 +55,8 @@
                     </div>
                     <!-- lista chat  -->
                     <div id="all-chats" class="">
-                        <div v-for="contact in contacts" id="singol-chat"  class="d-flex just-content-between">
-                            <div @click="selectChat" class="d-flex">
+                        <div v-for="(contact, index) in contacts" @click="selectChat(index)" :class="{active: index === active}" id="singol-chat"  class="d-flex just-content-between">
+                            <div  class="d-flex">
                                 <div id="img-chat">
                                     <img :src="contact.avatar" alt="avatar">
                                 </div>
@@ -77,7 +77,7 @@
                     <div id="singol-chat"  class="d-flex just-content-between">
                         <div class="d-flex">
                             <div id="img-chat">
-                                <img src="img/avatar_1.jpg" alt="avatar">
+                                <img :src="contacts[active].avatar" alt="avatar">
                             </div>
                             <div id="dati-chat">
                                 <div id="nome-person" class="d-flex align-items-center">
