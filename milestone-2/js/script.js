@@ -176,7 +176,6 @@ createApp({
         selectChat(index){
             this.active = index;
         },
-        
     }
 }
 ).mount('#app');
