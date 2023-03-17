@@ -193,6 +193,7 @@ main right
     padding-left: .625rem;
     border-radius: .375rem;
     margin-bottom: .625rem;
+    max-width: 300px;
 }
 
 .inviato .testo-msg{
