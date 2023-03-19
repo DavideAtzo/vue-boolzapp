@@ -74,6 +74,7 @@
                     </div>
                 </div>
             </div>
+            <!-- chat selezionata  -->
             <div id="open-chat">
                 <div id="friend-chat" class="d-flex align-items-center just-content-between px-10">
                     <div id="singol-chat" class="d-flex just-content-between">
@@ -81,6 +82,7 @@
                             <div id="img-chat">
                                 <img :src="contacts[active].avatar" alt="avatar">
                             </div>
+                            <!-- info chat selezionata  -->
                             <div id="dati-chat">
                                 <div id="nome-person" class="d-flex align-items-center">
                                     <h5>{{ contacts[active].name }}</h5>
@@ -89,22 +91,26 @@
                             </div>
                         </div>
                     </div>
+                    <!-- opzioni chat  -->
                     <div>
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <i class="fa-sharp fa-solid fa-paperclip"></i>
                         <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                 </div>
+                <!-- sezione messaggi chat  -->
                 <div id="sez-message">
                     <div class="d-flex just-content-between" v-for="(message, index) in contacts[active].messages"
-                        :class="{inviato: message.status === 'sent', ricevuto: message.status === 'received'}">
-                        <p>{{ message.message }}<span><i  @click="menuMessage(index)" class="fas fa-angle-down"></i>{{message.date}}</span></p>
-                        <div v-if="selectMessage === index" class="menu-msg">
+                        :class="{inviato: message.status === 'sent', ricevuto: message.status === 'received'}"  >
+                        
+                        <p>{{ message.message }}<span><i class="fas fa-angle-down"></i>{{message.date}}</span></p>
+                        <div  class="menu-msg">
                             <div>Message info</div>
-                            <div @click="deleteMessage(index)">Delete message</div>
+                            <div>Delete message</div>
                         </div>
                     </div>
                 </div>
+                <!-- sezione input utente  -->
                 <div id="wrt-message" class="d-flex align-items-center just-content-between px-10">
                     <div id="emoji">
                         <i class="fa-regular fa-face-smile"></i>

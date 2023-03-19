@@ -206,6 +206,7 @@ main right
     padding-left: .625rem;
     border-radius: .375rem;
     margin-bottom: .625rem;
+    max-width: 350px;
 }
 
 .inviato p {

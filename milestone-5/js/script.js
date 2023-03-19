@@ -8,7 +8,6 @@ createApp({
             newMessage: '',
             searchKey: '',
             active: 0,
-            selectMessage: null,
             contacts: [
                 {
                     name: 'Michele',
@@ -172,7 +171,6 @@ createApp({
                     ],
                 }
             ],
-            
         }
     },
     methods: {
@@ -195,12 +193,6 @@ createApp({
             } else {
                 return this.contacts;
             }
-        },
-        menuMessage(index) {
-            this.selectMessage === index ? false : this.selectMessage = index;
-        },
-        deleteMessage(index) {
-            this.contacts[this.active].messages.splice(index, 1);
         },
     }
 }
