@@ -14,7 +14,8 @@ body {
     background: rgb(40, 157, 152);
     background: linear-gradient(180deg, rgba(40, 157, 152, 1) 20%, rgba(217, 219, 212, 1) 20%);
 }
-[v-clock]{
+
+[v-clock] {
     display: none;
 }
 
@@ -42,11 +43,13 @@ utility
 .px-10 {
     padding: 0 10px;
 }
-img{
+
+img {
     border-radius: 50%;
     width: 30px;
     margin-right: .3125rem;
 }
+
 /*
 +++++++++++
 struttura globale
@@ -66,10 +69,12 @@ struttura globale
     height: 90%;
     display: flex;
 }
+
 #personal-user i,
-#friend-chat i{
+#friend-chat i {
     padding: 0 .3125rem;
 }
+
 /*
 +++++++++++
 main left
@@ -98,8 +103,9 @@ notifiche
     height: 50px;
     background-color: lightblue;
 }
-#notifiche i{
-    background-color:  white;
+
+#notifiche i {
+    background-color: white;
     color: lightblue;
     padding: 10px;
     border-radius: 50%;
@@ -112,7 +118,7 @@ sezione chat
 +++++++++++
 */
 
-#library-chats{
+#library-chats {
     height: 100%;
     overflow: hidden;
 }
@@ -123,14 +129,16 @@ sezione chat
     padding: 15px;
     border: 1px solid rgba(0, 0, 0, 0.1);
 }
-#search-bar input{
+
+#search-bar input {
     border: none;
     flex-grow: 1;
     padding: .3125rem;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-#search-bar i{
+
+#search-bar i {
     font-size: 15px;
     background-color: white;
     padding: .3125rem 1.25rem;
@@ -138,13 +146,13 @@ sezione chat
     border-bottom-left-radius: 5px;
 }
 
-#all-chats{
+#all-chats {
     width: 100%;
     overflow-y: auto;
     height: 100%;
 }
 
-#section-user #singol-chat{
+#section-user #singol-chat {
     padding: .3125rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-left: none;
@@ -171,38 +179,59 @@ main right
     background-color: #eaeaea;
     height: 3.125rem;
 }
-#sez-message{
+
+#sez-message {
     background-image: url(../img/mine.jpg);
     width: 100%;
     overflow-y: auto;
     height: 100%;
     padding: .625rem 1.875rem;
+    position: relative;
 }
-.inviato{
+
+.inviato {
     display: flex;
     justify-content: end;
     width: 100%;
 }
-.ricevuto{
+
+.ricevuto {
     display: flex;
     justify-content: start;
     width: 100%;
 }
-#sez-message p{
+
+#sez-message p {
     padding: .3125rem;
-    padding-right: 3.125rem;
     padding-left: .625rem;
     border-radius: .375rem;
     margin-bottom: .625rem;
 }
 
-.inviato p{
+.inviato p {
     background-color: #d6f8bced;
 }
-.ricevuto p{
+
+.ricevuto p {
     background-color: white;
 }
+#sez-message i{
+    margin-right: 10px;
+    font-size: 16px;
+}
+span {
+    font-size: 8px;
+    padding-left: 30px;
+}
 
+.menu-msg {
+    background-color: white;
+    padding: .625rem;
+    margin-bottom: .3125rem;
+    position: absolute;
+    right: 120px;
+    top: 35px;
+}
 #wrt-message {
     height: 3.125rem;
     background-color: #eaeaea;
@@ -212,25 +241,26 @@ main right
     bottom: 0;
 }
 
-#wrt-message input{
+#wrt-message input {
     border: none;
     padding: .3125rem;
 }
 
 #emoji,
-#invia-vocale{
+#invia-vocale {
     width: 10%;
 }
 
-#invia-msg{
+#invia-msg {
     flex-grow: 1
 }
-#invia-msg input{
+
+#invia-msg input {
     width: 100%;
     border-radius: 5px;
 }
 
-#invia-vocale i{
+#invia-vocale i {
     display: flex;
     justify-content: flex-end;
 }
